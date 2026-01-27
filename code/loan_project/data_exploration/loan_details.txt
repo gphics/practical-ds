@@ -1,0 +1,11 @@
+This is the report on loan details analysis
+
+Task 1: Loan Purpose: What are the most common reasons for seeking a loan (e.g., debt consolidation, home improvement, small business), and which category has the highest risk?
+
+Answer: 
+The following are the reasons people request for loan : HOMEIMPROVEMENT, DEBTCONSOLIDATION, PERSONAL, VENTURE, MEDICAL, EDUCATION. Using Chi-square test a statistically significant assosciation (pvalue:2.173084187054017e-194) was observed between loan purpose and loan status. Residuals was calculated from the result from the chi-square and  the category the highest risk is DEBTCONSOLIDATION with a value of 14.43 followed by the medical category with a value of 10.97. The safest category are PERSONAL, VENTURE, and EDUCATION which show a statistically significant deficit.
+
+Task 2: Interest Rates: Is there a clear relationship between higher interest rates and an increase in defaults?
+
+Answer:
+The relationship between interest rate and loan status is a mild positive correlation with a coeficient of 0.33 hence high interest rate would cause mild increase in chance of loan default.        

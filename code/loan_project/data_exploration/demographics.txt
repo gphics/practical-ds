@@ -1,0 +1,54 @@
+This is the report on the demographics analysis
+
+Task 1: Income Distribution: What is the average and median income of loan applicants, and how does it differ between those who repay and those who default?
+
+Answer:
+
+Population        Mean        median
+All               80319.05    67048.00
+Non-defaulters    59886.09    50629.00
+Defaulters        86157.04    72928.00
+
+
+Task 2: Employment Stability: Does the length of employment or "Years at Current Job" correlate with a lower likelihood of default?
+
+Answer:
+Using spearman rank ordeer correlation method, the correlation coeficient is 1.0 and the pvalue is 0.0. Hence there is a strong positive correlation which is statistically significant between the employment experience and loan status. The statistical significance was further confirmed with mannwhitneyu test and a pvalue of 6.731452348334923e-09 which means the correlation between employment experience and loan status is statistically significance.
+
+Task 3: Education & Professional Level: How do loan default/repay rates vary across different education levels (e.g., Graduate vs. Non-Graduate)?
+
+Answer:
+Using cochran armitage trend test, a pvalue of 0.71 was gotten when comparing education levels and loan status. Hence there is no significant association between the two. This was further confirmed using chi-square test and a pvalue of 0.73 was gotten.
+
+
+Task 4: Financial Ratios: What is the average Debt-to-Income (DTI) ratio of borrowers, and at what threshold does the risk of default significantly increase?
+
+Answer:
+The DTI have a mean of 13% and a median 12%. The data distribution of the DTI is right skewed hence the median was chosen as the appropriate centre of tendency. Median also means the 50th percentile meaning less than 50% of the entire population have a DTI value less than 12% and more than 50% of the entire population have a DTI value greater than 12%. In the financial field the acceptable threshold of DTI is between 36-43%, any value above this range signifies a high risk loan.
+To get the DTI threshold in my dataset, I used logistic regression and decision tree classifier and I got a threshold of 24%.
+
+Task 5: Regional Insights: Which home ownership shows the highest concentration of loan applications or default rates?
+
+Answer:
+Using chi-square test to investigate the associativity between home ownership type and loan status, a pvalue of 0.0 was gotten which implies a statistically significant relationship between the two. Using Cramer's V test to check the strength, I got a value of 0.257 which implies there is a weak to moderate assosciativity test between the two.
+
+Test 6:
+Gender influence: what is the relationship between age and whether loan applicant would repay or default ?
+
+Answer:
+Using spearmans rank correlation test, a correlation coeficient of -0.03 was gotten which implies that there is a weak negative correlation between the two hence age have little to no effect statistically on whether the loan applicant will default or not.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
