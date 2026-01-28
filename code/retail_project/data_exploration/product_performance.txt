@@ -1,0 +1,8 @@
+Result of product performance EDA
+
+Task 1:Top & Bottom Performers: Which products are the best-sellers by quantity (frequency of occurence) ?
+
+Answer:
+By frequency WHITE HANGING HEART T-LIGHT HOLDER with a value of 5783 is the highest while GREEN CHENILLE SHAGGY C/COVER with a value of 1 is the lowest.
+
+By quantity WORLD WAR 2 GLIDERS ASSTD DESIGNS  with a value of 110249 is the highest while I LOVE LONDON MINI RUCKSACK with a value of 1 is the lowest.

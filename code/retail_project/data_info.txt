@@ -13,3 +13,21 @@ InvoiceDate: Invice date and time. Numeric. The day and time when a transaction 
 UnitPrice: Unit price. Numeric. Product price per unit in sterling (Â£).
 CustomerID: Customer number. Nominal. A 5-digit integral number uniquely assigned to each customer.
 Country: Country name. Nominal. The name of the country where a customer resides.
+
+Engineered features:
+is_cancelled: to represent the status of cancelled transactions
+is_guest: to represent the status of guest/unknown customers
+year:
+month:
+hour:
+day_name:
+week_day
+
+
+
+
+
+
+
+
+

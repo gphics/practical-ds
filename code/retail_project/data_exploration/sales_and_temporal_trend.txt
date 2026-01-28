@@ -1,0 +1,11 @@
+Result of sales and temporal trend EDA
+
+Task 1: Monthly Trends: Which months see the highest transaction volume?
+
+Answer:
+The month with the highest transaction volume is November with a transaction volume of 162339.
+
+Task 2: Peak Activity Times: What are the busiest days of the week and hours of the day for sales?
+
+Answer:
+The busiest days of the week and hours of the day for sales is Sunday at 12:00
