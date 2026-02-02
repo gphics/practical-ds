@@ -1,0 +1,13 @@
+Demographic insights EDA
+
+Task:
+
+1. Age vs. Spending: Is there a correlation between the cardholder’s age (derived from dob) and their preferred spending categories?
+
+2. Gender Bias: Do spending patterns in categories like travel or food_dining differ significantly between genders?
+
+Answer:
+
+1. There is a significant correlation between the age and spending categories as confirmed using anova test. A pvalue < 0.001 was obtained and a partial eta-squared (np2) value of 0.01 was obtained. The pvalue obtained signifies the statistical significant while the np2 value obtained means age only explains 1% of the spending category variance.
+
+2. To determine the relationship between gender, spending categories and amount , a two way anova was used. The pvalue gotten between gender and amount is 0.7 which means there is no assosciation between gender and amount. The pvalue gotten for category vs amount and category+gender vs amount is less than 0.01 which implies a statistical significant while the np2 value gotten was far less than 0.01 which implies even though there is a statistical significance, the amount of variability explained is less than 1%.

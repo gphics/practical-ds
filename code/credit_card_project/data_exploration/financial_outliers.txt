@@ -1,0 +1,13 @@
+Financial Outliers EDA
+
+Task:
+
+1. Transaction Magnitude: How do individual transaction amounts compare to the user’s overall mean spending?
+
+2. High-Volume Merchants: Which specific merchants or categories are responsible for the most "outlier" (extreme value) transactions?
+
+Answer:
+
+1. The average amount spent is $70.35, the minimum amount spent is $1, the maximum amount spent is $28948.9. 25% of the total population spent exactly or below $9.65. 50% of the total population spent exactly or below $47.52 .75% of the total population spent exactly or below $83.14.
+
+2. The merchant and category responsible for most outlier is Fraud kilback LLC and Grocery POS respectively.

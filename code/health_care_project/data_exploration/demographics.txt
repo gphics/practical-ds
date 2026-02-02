@@ -1,0 +1,7 @@
+Result of DEMOGRAPHICS EDA
+
+Task:
+   Demographic Profiling: Does a specific age group or gender correlate with higher rates of certain conditions (e.g., are older patients more frequently admitted for "Diabetes" or "Hypertension")?
+   
+Answer:
+Using chi-square test and anova, no significant assosciation was discovered between age-group/age vs medical contion or gender vs medical condition. According to domain knowledge there is a significant relationship between age or gender vs medical conditions (Arthritis, Asthma, Cancer, Diabetes, Hypertension, Obesity) but this dataset did not provide such information. At some point, I perform random sampling on the data hoping I can get a different opinion but the result was the same. Even the bar plot for the three features shows no significant information.

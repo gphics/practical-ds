@@ -13,7 +13,7 @@ from pathlib import Path
 
 base_dir = Path(__file__).resolve().parent
 
-file_path = base_dir / ".."/".." / "data"/ "loan_data.csv"
+file_path = base_dir / ".."/".." / "data" / "loan_data.csv"
 
 file_path = file_path.resolve()
 

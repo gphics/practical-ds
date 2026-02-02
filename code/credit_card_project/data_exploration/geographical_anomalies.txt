@@ -1,0 +1,12 @@
+EDA Result
+
+Task:
+
+1. Distance Logic: What is the average distance between a user's home (lat/long) and the merchant's location?
+
+2. State-Level Trends: Are there specific states or cities that exhibit significantly higher average transaction values?
+
+Answer:
+1. The average  distance between a user's home (lat/long) and the merchant's location is 70.11 km.
+
+2. Base on transaction volume the city and state with the highest value are Birmingham and TX respectively. Base on transaction amount($) the city and state with the highest value are Meridian and TX respectively. 

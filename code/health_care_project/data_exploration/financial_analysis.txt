@@ -1,0 +1,8 @@
+Result of financial analysis EDA
+
+Task:
+Financial Analysis: What is the distribution of Billing Amounts? Are certain Insurance Providers (e.g., Cigna vs. Medicare) associated with more expensive treatments or longer stays?
+
+Answer:
+The billing amounts data is not normally distributed and not skewed. The average amount spent on treatment was 25539 dollars.
+Using kruskal wallis test to determine the assosciativity between insurance providers and billing amount or admission duration, it was confirmed that there is no assosciation between them whatsover.

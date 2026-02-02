@@ -13,7 +13,8 @@ Defaulters        86157.04    72928.00
 Task 2: Employment Stability: Does the length of employment or "Years at Current Job" correlate with a lower likelihood of default?
 
 Answer:
-Using spearman rank ordeer correlation method, the correlation coeficient is 1.0 and the pvalue is 0.0. Hence there is a strong positive correlation which is statistically significant between the employment experience and loan status. The statistical significance was further confirmed with mannwhitneyu test and a pvalue of 6.731452348334923e-09 which means the correlation between employment experience and loan status is statistically significance.
+Using spearman rank order correlation method, the correlation coeficient is -0.027 and the pvalue is 6.691968733916838e-09. Hence there is a weak to non-existent statistically significant correlation between the employment experience and loan status. The statistical significance was further confirmed with mannwhitneyu test and a pvalue of 6.731452348334923e-09. In conclusion there is a statistically significant, but very weak, negative relationship between the features.
+
 
 Task 3: Education & Professional Level: How do loan default/repay rates vary across different education levels (e.g., Graduate vs. Non-Graduate)?
 

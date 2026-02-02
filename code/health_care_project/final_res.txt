@@ -1,0 +1,47 @@
+Health Care Dataset Analysis
+
+Context
+This synthetic healthcare dataset has been created to serve as a valuable resource for data science, machine learning, and data analysis enthusiasts. It is designed to mimic real-world healthcare data, enabling users to practice, develop, and showcase their data manipulation and analysis skills in the context of the healthcare industry.
+
+Source: https://www.kaggle.com/datasets/prasad22/healthcare-dataset
+
+Task ------->
+
+Demographics -->
+
+Question
+Demographic Profiling: Does a specific age group or gender correlate with higher rates of certain conditions (e.g., are older patients more frequently admitted for "Diabetes" or "Hypertension")?
+
+Answer
+Using chi-square test and anova, no significant assosciation was discovered between age-group/age vs medical contion or gender vs medical condition. According to domain knowledge there is a significant relationship between age or gender vs medical conditions (Arthritis, Asthma, Cancer, Diabetes, Hypertension, Obesity) but this dataset did not provide such information. At some point, I perform random sampling on the data hoping I can get a different opinion but the result was the same. Even the bar plot for the three features shows no significant information.
+
+Financial Analysis -->
+
+Question
+Financial Analysis: What is the distribution of Billing Amounts? Are certain Insurance Providers (e.g., Cigna vs. Medicare) associated with more expensive treatments or longer stays?
+
+Answer
+The billing amounts data is not normally distributed and not skewed. The average amount spent on treatment was 25539 dollars.
+Using kruskal wallis test to determine the assosciativity between insurance providers and billing amount or admission duration, it was confirmed that there is no assosciation between them whatsover.
+
+Medication Pattern -->
+
+Question
+For a specific condition like "Asthma," what is the most frequently prescribed Medication, and does it impact the length of the stay?
+
+Answer
+Aspirin is the most frequently used drug for each of the medical condition. There is no significant assosciation between the medication used and admission duration as verified by kruskal wallis test
+
+Operational Efficiency -->
+
+Question
+Operational Efficiency: How many Hospitals or Doctors have the longest average admission durations, and is there a correlation with the Medical Condition being treated?
+
+Answer
+There are 39876 hospitals and 1186 of them have the highest admission duration of 30 days.
+There are  40341 doctors and 1131 of them have the highest admission duration of 30 days.
+Using kruskal-wallis test because admission duration is not normally distributed, a pvalue of 0.32 was gotten hence there is no correlation between admission duration and medical condition.
+
+
+Summary
+An analysis of a synthetic healthcare dataset indicates a lack of expected real-world medical correlations across several categories. Key findings include no significant association between age or gender and specific conditions, an average billing amount of $25,539 without correlation between insurance providers and costs or stay length, and Aspirin being the most frequent medication with no impact on admission duration. The analysis also found no link between medical conditions and the length of hospital stays, even though many patients had maximum 30-day stays. 

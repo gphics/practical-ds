@@ -6,7 +6,7 @@
 #### Exploratory Data Analysis:
 
     1. Behavioral Patterns
-    Hourly Velocity: At what time of day do most transactions occur, and do "off-hour" transactions (e.g., 3 AM) show different spending amounts?
+    Hourly Velocity: At what hour of day do most transactions occur, and do "off-hour" transactions (e.g., 3 AM) show different spending amounts?
     Category Spending: Which categories (e.g., health_fitness vs. online_retail) have the most frequent transactions versus the highest total monetary value?
 
     2. Geographical Anomalies
@@ -28,9 +28,3 @@
 #### Models:
     1. Fraud Detection (Classification): Use XGBoost or Random Forest to flag suspicious transactions.
     Challenge: Handling the extreme class imbalance (few frauds vs. many legit transactions).
-
-    2. Spending Forecasting (Time-Series): Use Prophet to predict a user's total spending for the next month.
-
-    5. Customer Segmentation (Clustering): Use K-Means to group users into "Budgeters," "Luxury Spenders," or "Frequent Travelers."
-
-    4. Anomaly Detection (Unsupervised): Use Isolation Forest to find transactions that don't fit any normal spending profile.

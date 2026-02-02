@@ -1,0 +1,13 @@
+Temporal seasonality EDA
+
+Task:
+
+1. Day-of-Week Analysis: Does spending volume significantly increase on weekends compared to weekdays?
+
+2. Monthly Cycles: Are there visible "payday" spikes in the data where transaction volume surges at the beginning or end of the month?
+
+Answer:
+
+1. The average spending on weekend and weekdays are $69.90  and $70.59 respectively, hence there is less than $1 difference between the two averages. The total pending on weekend and weekdays are $31562634.11 and $59659794.79 respectively. The difference between the sum is large which is because the total count of transactions occuring on weekend(451536) is far less than the ones that occur during the weekday(845139). To determine the significance of weekdays and weekends on the amount spent, pointbiserial and mannwhitneyu test was used. The pointbiserial test reported a correlation coeficient of -0.002 and a pvalue of 0.01 which means the weekday/weekend have no practical effect on the amount spent even if the relationship between them is statistically significant. Using a one-tailed (less) mannwhitneyu test, to test for the statistical significance between the mean of transactions occuring on weekend and those that occurs on weekday, a pvalue of 0.007 was gotten which confirms that the mean amount spent during the weekend($69.90) is significantly less than the mean amount($70.59) spent weekday. This is a case of statistically significant but practically insignificant.
+
+2. There are spikes in transaction volume on the following payday: 1,2,28 & 30.

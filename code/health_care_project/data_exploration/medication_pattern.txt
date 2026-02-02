@@ -1,0 +1,7 @@
+Medication Pattern EDA
+
+Task:
+Medication Patterns: For a specific condition like "Asthma," what is the most frequently prescribed Medication, and does it impact the length of the stay?
+
+Answer:
+Aspirin is the most frequently used drug for each of the medical condition. There is no significant assosciation between the medication used and admission duration as verified by kruskal wallis test

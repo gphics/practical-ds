@@ -1,0 +1,9 @@
+Result of operational efficiency EDA
+
+Task:
+Operational Efficiency: How many Hospitals or Doctors have the longest average admission durations, and is there a correlation with the Medical Condition being treated?
+
+Answer:
+There are 39876 hospitals and 1186 of them have the highest admission duration of 30 days.
+There are  40341 doctors and 1131 of them have the highest admission duration of 30 days.
+Using kruskal-wallis test because admission duration is not normally distributed, a pvalue of 0.32 was gotten hence there is no correlation between admission duration and medical condition.

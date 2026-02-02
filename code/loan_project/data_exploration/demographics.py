@@ -105,7 +105,8 @@ non_defaulters = target_df[~repay_condition][target_cols[0]]
 
 # calculating the correlation coeficient and significance
 spearmans_stat = spearmanr(
-    target_df[target_cols[0]], target_df[target_cols[0]])
+    target_df[target_cols[0]], target_df[target_cols[1]])
+
 
 # using mannwhitneyu test to test for significance
 mann_significance = mannwhitneyu(defaulters, non_defaulters)

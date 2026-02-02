@@ -1,0 +1,13 @@
+Result of EDA
+
+Tasks:
+
+1. Hourly Velocity: At what hour of day do most transactions occur, and do "off-hour" transactions (e.g., 3 AM) show different spending amounts?
+
+2. Category Spending: Which categories (e.g., health_fitness vs. online_retail) have the most frequent transactions versus the highest total monetary value?
+
+Answer:
+
+1. Most transactions occur at 23:00 (11:00pm). There is a significant variations in the spending amount at off-hour period. The average amount spent at off-hour period is 78.59($) while 66.24($) for non off-hour period. Using a one-tailed (greater) Mannwhitneyu test on the amount by off-hour feature, a pvalue < 0.001 was gotten hence the mean of the amount spent at off-hour period is significantly greater than the mean of the amount spent at a non off-hour period.
+
+2. The category with the most frequent transactions is gas transport while the one with the highest monetary value is grocery pos. Using Kruskal wallis test to figgure out if there is an assosciation between category and amount spent, a pvalue < 0.001 was gotten which signifies the prescence of significant assosciation between the two features

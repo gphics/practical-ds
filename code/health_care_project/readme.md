@@ -7,11 +7,10 @@
 
     * Demographic Profiling: Does a specific age group or gender correlate with higher rates of certain conditions (e.g., are older patients more frequently admitted for "Diabetes" or "Hypertension")?
 
-    * Operational Efficiency: Which Hospitals or Doctors have the longest average admission durations, and is there a correlation with the Medical Condition being treated?
-
+    * Operational Efficiency: How many Hospitals or Doctors have the longest average admission durations, and is there a correlation with the Medical Condition being treated?
+    
     * Financial Analysis: What is the distribution of Billing Amounts? Are certain Insurance Providers (e.g., Cigna vs. Medicare) associated with more expensive treatments or longer stays?
 
-    * Blood Type Availability: Is there a mismatch between the most common patient Blood Types and the severity of the medical conditions treated?
 
     * Medication Patterns: For a specific condition like "Asthma," what is the most frequently prescribed Medication, and does it impact the length of the stay?
 
