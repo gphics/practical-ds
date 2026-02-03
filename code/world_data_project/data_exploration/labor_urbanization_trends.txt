@@ -1,0 +1,9 @@
+Labor & Urbanization Trends
+
+Question
+
+Study the dynamics between urban population percentage, labor force participation,Unemployment rate, and minimum wage levels.
+
+
+Answer
+Urban population percentage, labor force participation,unemployment rate, and minimum wage levels have negligible correlation between each other except unemployment rate and labor force participation which have a moderate negative correlation hence as unemployment rate increases labor force participation decreases.

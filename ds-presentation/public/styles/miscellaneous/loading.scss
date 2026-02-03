@@ -1,0 +1,42 @@
+.loading-component {
+    width: 80px;
+    height: 80px;
+    background-color: rgba(85, 82, 82, 0.219);
+    margin: 0 auto;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .spinner {
+        width: 100%;
+        border-radius: inherit;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px transparent solid;
+        border-bottom-color: black;
+        animation: spinner .6s linear infinite;
+
+        @keyframes spinner {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    }
+
+
+    .backdrop {
+
+        width: 90%;
+        height: 90%;
+        background-color: rgb(255, 255, 255);
+        border-radius: 100%;
+
+    }
+}

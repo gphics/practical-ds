@@ -27,7 +27,7 @@ target_df = import_df(target_cols)
 
 medication_condition_group = target_df.groupby(target_cols[:2]).size()
 
-print(medication_condition_group)
+
 med_vs_adm_duration = pg.kruskal(
     target_df, dv=target_cols[-1], between=target_cols[1])
 

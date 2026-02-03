@@ -1,0 +1,9 @@
+Healthcare & Well-being
+
+Question 
+
+Analyze the impact of healthcare metrics (Infant mortality, Fertility Rate, Maternal mortality ratio, Physicians per thousand, Out of pocket health expenditure) on overall life expectancy across different regions.
+
+Answer
+Life expectancy have a strong negative correlation with infant mortality, fertility rate and maternal mortality ratio, meaning if the value of healthcare metrics increases then the life expectancy decreases and vice versa. Life expectancy also have a moderate negative correlation with out of pocket health expenditure, meaning if life expectancy increases then out of pocket health expenditure reduces.
+Lastly life expectancy have a strong positive correlation with physicians per thousand hence, an increase in life expectancy causes a coresponding increase in physicians per thousand and vice versa.

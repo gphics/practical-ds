@@ -1,0 +1,7 @@
+Economic Correlation Analysis
+
+Question
+Economic Correlation Analysis: Investigate the relationship between GDP and socio-economic factors like life expectancy, literacy rates, and unemployment.
+
+Answer
+There is a weak positive correlation between GDP, life expectancy and gross tertiary education enrollment. unemployment rate and gross primary education enrollment have no effect whatsover with GDP
