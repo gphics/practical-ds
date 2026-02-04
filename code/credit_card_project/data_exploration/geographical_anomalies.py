@@ -38,20 +38,44 @@ geo_offset_sum_stat = target_df[target_cols[0]].mean()
 
 # 2.
 
+# using transaction amount ($)
+city_group = target_df.groupby(target_cols[1])[
+    target_cols[-1]].sum().sort_values(ascending=False)
+
+state_group = target_df.groupby(
+    target_cols[2])[target_cols[-1]].sum().sort_values(ascending=False)
+
+
+_, ax = plt.subplots(1, 2)
+
+city_group[:5].plot(kind="bar", ax=ax[0])
+
+state_group[:5].plot(kind="bar", ax=ax[1])
+
+# ax0 style
+ax[0].tick_params(labelsize=8, axis="both")
+ax[0].set_ylabel("Amount($)", size=8)
+ax[0].set_xlabel("City", size=8)
+
+# ax style
+ax[1].tick_params(labelsize=8, axis="both")
+ax[1].set_ylabel("Amount($)", size=8)
+ax[1].set_xlabel("State", size=8)
+
+# general styles
+plt.tight_layout(rect=(0.05, 0.05, 0.95, 0.95))
+plt.suptitle("City & State Level Trends", size=10)
+
+export_fig("city_state_transaction_amount.png")
+
+
 # using frequency
 city_group = target_df.groupby(
     target_cols[1]).size().sort_values(ascending=False)
 state_group = target_df.groupby(
     target_cols[2]).size().sort_values(ascending=False)
 
-# using transaction amount ($)
-# city_group = target_df.groupby(target_cols[1])[
-#     target_cols[-1]].sum().sort_values(ascending=False)
-
-# state_group = target_df.groupby(
-#     target_cols[2])[target_cols[-1]].sum().sort_values(ascending=False)
-
-# # # plotting figs
+# # # # plotting figs
 # _, ax = plt.subplots(1, 2)
 
 # city_group[:5].plot(kind="bar", ax=ax[0])

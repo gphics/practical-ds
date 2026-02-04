@@ -33,10 +33,12 @@ score_df["kbest"] = kbest_scores
 
 
 # plotting graph
-# sns.barplot(score_df.sort_values(by="kbest", ascending=False), x="feature", y="kbest")
+# sns.barplot(score_df.sort_values(
+#     by="kbest", ascending=False), x="feature", y="kbest")
 # plt.title("Feature selection using Select KBest".title())
 # plt.xticks(rotation=90, size=9)
-# plt.savefig(f"{base_dir}/visuals/feature_selection_kbest.png")
+# plt.savefig(f"{base_dir}/visuals/feature_selection_kbest.png",
+#             dpi=350, bbox_inches="tight")
 
 
 def final_selection(by="mi"):
@@ -54,4 +56,4 @@ home_ownership = ["person_home_ownership_OTHER", "person_home_ownership_OWN"]
 
 
 features_selected = mi_selected + home_ownership
-print(features_selected)
+# print(features_selected)

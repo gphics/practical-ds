@@ -47,15 +47,15 @@ weekday_df = target_df[~condition]["amt"]
 mann = mannwhitneyu(weekend_df, weekday_df, alternative="less")
 
 
-# plotting graph
-# ax=spending_vol_sum.plot(kind="bar")
+# # plotting graph
+# ax = spending_vol_sum.plot(kind="bar")
 
-# styling graph
+# # styling graph
 # ax.ticklabel_format(style="plain", axis="y")
 # ax.set_ylabel("Amount($)")
 # plt.title("Spending Amount")
 
-# exporting fig
+# # exporting fig
 # export_fig("spending_amount.png")
 
 
@@ -65,23 +65,23 @@ spikes = target_df.groupby(target_cols[1])["amt"]
 sum_spikes = spikes.sum()
 freq_spikes = spikes.size()
 
-# Graph Plotting
+# # Graph Plotting
 # _, ax = plt.subplots(1, 2, gridspec_kw={
 #                      "width_ratios": [2, 1]}, figsize=(13, 6))
 
 # sum_spikes.plot(kind="bar",  ax=ax[0])
 # freq_spikes.plot(ax=ax[1])
 
-# general fig styles
+# # general fig styles
 # plt.tight_layout(rect=[0.03, 0.03, 0.95, 0.95])
 # plt.suptitle("Payday spikes", size=10)
 
-# ax0 style
+# # ax0 style
 # ax[0].tick_params(axis="both", labelsize=8)
 # ax[0].set_ylabel("Amount($)", size=9)
 # ax[0].set_xlabel("Day of Month", size=9)
 
-# ax1 style
+# # ax1 style
 # ax[1].set_xlim(0, 32)
 # ax[1].set_ylim(20000, 50000)
 # ax[1].tick_params(axis="both", labelsize=8)
@@ -89,5 +89,5 @@ freq_spikes = spikes.size()
 # ax[1].set_xlabel("Day of Month", size=9)
 
 
-# saving plot
+# # saving plot
 # export_fig("transaction_spikes.png")

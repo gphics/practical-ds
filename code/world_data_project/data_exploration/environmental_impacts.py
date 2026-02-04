@@ -30,9 +30,9 @@ target_cols = [
     "Country", "Agricultural Land( %)", "Forested Area (%)", "Co2-Emissions", "Urban_population"]
 target_df = import_df(target_cols)
 
-# sns.heatmap(target_df[target_cols[1:]].corr(), annot=True)
-# plt.title("Environmental Impacts")
-# export_fig("environmental_impacts_heatmap.png")
+sns.heatmap(target_df[target_cols[1:]].corr(), annot=True)
+plt.title("Environmental Impacts")
+export_fig("environmental_impacts_heatmap.png")
 
 # subsetting df and getting the top 10
 urban_sorted_top_10 = target_df.sort_values(
@@ -176,29 +176,29 @@ bottom_10_predictors = corr_df.nsmallest(
 
 
 # Plotting the graphs
-_, ax = plt.subplots(1, 2)
+# _, ax = plt.subplots(1, 2)
 
-# Actual graph plotting
-sns.barplot(top_10_predictors, x="predictor", y="coef", ax=ax[0])
+# # Actual graph plotting
+# sns.barplot(top_10_predictors, x="predictor", y="coef", ax=ax[0])
 
-sns.barplot(bottom_10_predictors,  x="predictor", y="coef", ax=ax[1])
+# sns.barplot(bottom_10_predictors,  x="predictor", y="coef", ax=ax[1])
 
-# styling ax 0
-ax[0].tick_params(rotation=90, axis="x", labelsize=7)
-ax[0].tick_params(axis="y", labelsize=7)
-ax[0].ticklabel_format(axis="y", style="plain")
-ax[0].set_xlabel("Predictor(Top)", size=8)
-ax[0].set_ylabel("Correlation Coeficient", size=8)
+# # styling ax 0
+# ax[0].tick_params(rotation=90, axis="x", labelsize=7)
+# ax[0].tick_params(axis="y", labelsize=7)
+# ax[0].ticklabel_format(axis="y", style="plain")
+# ax[0].set_xlabel("Predictor(Top)", size=8)
+# ax[0].set_ylabel("Correlation Coeficient", size=8)
 
 
-# styling ax 1
-ax[1].tick_params(rotation=90, axis="x", labelsize=7)
-ax[1].tick_params(axis="y", labelsize=7)
-ax[1].ticklabel_format(axis="y", style="plain")
-ax[1].set_xlabel("Predictor(Bottom)", size=8)
-ax[1].set_ylabel("Correlation Coeficient", size=8)
-# general styles
-plt.tight_layout(rect=(0.05, 0.05, 0.95, 0.95))
-plt.suptitle("Life Expectancy By Country (Top & Bottom 10)", size=10)
+# # styling ax 1
+# ax[1].tick_params(rotation=90, axis="x", labelsize=7)
+# ax[1].tick_params(axis="y", labelsize=7)
+# ax[1].ticklabel_format(axis="y", style="plain")
+# ax[1].set_xlabel("Predictor(Bottom)", size=8)
+# ax[1].set_ylabel("Correlation Coeficient", size=8)
+# # general styles
+# plt.tight_layout(rect=(0.05, 0.05, 0.95, 0.95))
+# plt.suptitle("Life Expectancy By Country (Top & Bottom 10)", size=10)
 
-export_fig("top_&_bottom_predictors_for_life_expectancy.png")
+# export_fig("top_&_bottom_predictors_for_life_expectancy.png")

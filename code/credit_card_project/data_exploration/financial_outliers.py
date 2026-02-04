@@ -80,4 +80,4 @@ plt.suptitle("Outliers Bar PLot", size=10)
 
 
 # saving fig
-# export_fig("outliers_bar_plot.png")
+export_fig("outliers_bar_plot.png")

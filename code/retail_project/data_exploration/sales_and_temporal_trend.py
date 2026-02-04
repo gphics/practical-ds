@@ -30,9 +30,9 @@ monthly_transaction_volume = target_df["month_name"].value_counts()
 
 
 # plotting the bar-graph of monthly_transaction_volume
-# monthly_transaction_volume.plot(kind="bar")
-# plt.title("Monthly Transaction Volume")
-# export_fig("monthly_transaction_volume.png")
+monthly_transaction_volume.plot(kind="bar")
+plt.title("Monthly Transaction Volume")
+export_fig("monthly_transaction_volume.png")
 
 
 # Task 2:
@@ -51,9 +51,3 @@ top_10 = busiest.nlargest(10)
 # top_10.plot(kind="bar")
 # plt.title("top 10 busiest hours with days".title())
 # export_fig("busiest_hours.png")
-
-
-# Task 3:
-"""
-
-"""

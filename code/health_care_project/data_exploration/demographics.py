@@ -60,12 +60,17 @@ _, chi_pvalue, _, expected_freq = chi2_contingency(contingency_table)
 
 # Age vs Medical conditions
 
+first_contingency_table[:4].plot(kind="bar")
+plt.title("Age Group vs Medical Condition 1")
+plt.ylabel("Count")
+export_fig("age_group_vs_med_cond1.png")
+
 # first_contingency_table[4:].plot(kind="bar")
 # plt.title("Age Group vs Medical Condition 2")
 # plt.ylabel("Count")
-
 # export_fig("age_group_vs_med_cond2.png")
 
+# plotting ..
 
 # contingency_table.plot(kind="bar")
 # plt.title("Gender vs Medical Condition")

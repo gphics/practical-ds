@@ -20,8 +20,7 @@ sys.path.append(str(base_dir))
 file_path = base_dir / ".." / "data" / "cleaned_online_retail.csv"
 
 
-df = pd.read_csv(file_path, parse_dates=[
-    "InvoiceDate"])
+df = pd.read_csv(file_path, parse_dates=["InvoiceDate"])
 
 
 def export_df():
@@ -40,6 +39,6 @@ def export_fig(fig_name):
     try:
         fig_path = str(base_dir) + \
             "/retail_project/visuals/{}".format(fig_name)
-        plt.savefig(fig_path)
+        plt.savefig(fig_path, dpi=350, bbox_inches="tight")
     except Exception as e:
         print(e)

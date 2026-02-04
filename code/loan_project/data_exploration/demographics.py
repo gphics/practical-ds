@@ -7,7 +7,7 @@ Created on Sat Jan 24 19:48:24 2026
 """
 
 
-from data_entry import df
+from data_entry import df, export_fig
 from sklearn.tree import DecisionTreeClassifier, export_text
 from sklearn.linear_model import LogisticRegression
 import statsmodels.api as sm
@@ -73,11 +73,11 @@ defaulters_stat = get_summary_stat(defaulters, target_cols[0])
 
 # plotting the histogram of person_income data
 
-# target_df[target_cols[0]].plot(kind="hist")
-# plt.title("Person Income Distribution")
+target_df[target_cols[0]].plot(kind="hist")
+plt.title("Person Income Distribution")
 
 # saving the plot figure
-# plt.savefig(f"{parent_dir}/visuals/person_income_dist.png")
+export_fig("person_income_dist.png")
 
 
 # Task 2:
@@ -95,7 +95,7 @@ target_df = df[target_cols]
 
 # target_df[target_cols[0]].plot(kind="hist")
 # plt.title("Employment Experience Histogram")
-# plt.savefig(f"{parent_dir}/visuals/employment_exp_hist.png")
+# export_fig("employment_exp_hist.png")
 
 
 # using the repay condition created earlier since it only recognize loan status to subset the current target_df
@@ -175,7 +175,7 @@ proba = log_reg.predict_proba(dti_range)[:, 1]
 # plt.xlabel("DTI")
 # plt.ylabel("Probability")
 # plt.title("Sigmoid curve for determining DTI threshold (0.24)")
-# plt.savefig(f"{parent_dir}/visuals/dti_sigmoid_curve_threshold.png")
+# export_fig("dti_sigmoid_curve_threshold.png")
 
 
 # Task 5:
@@ -201,10 +201,10 @@ strength = association(contingency_table)
 # print(strength)
 
 # plotting the count plot of home ownership distribution
-# sns.countplot(target_df, x = target_cols[0], hue=target_cols[1])
+# sns.countplot(target_df, x=target_cols[0], hue=target_cols[1])
 # plt.title("Count Plot Of Home Ownership")
 
-# plt.savefig(f"{parent_dir}/visuals/home_ownership_count_plot.png")
+# export_fig("home_ownership_count_plot.png")
 
 # TASK 6:
 """

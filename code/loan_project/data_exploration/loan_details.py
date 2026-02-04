@@ -9,7 +9,7 @@ Created on Tue Jan 27 11:38:34 2026
 
 """
 
-from data_entry import df
+from data_entry import df, export_fig
 from pathlib import Path
 import sys
 import seaborn as sns
@@ -33,11 +33,6 @@ target_cols = ["loan_intent", "loan_status"]
 target_df = df[target_cols]
 
 
-def export_fig(img_name):
-    img_path = f"{base_dir}/visuals/{img_name}"
-    plt.savefig(img_path)
-
-
 # getting the proportions of loans for each loan intent
 loan_intent_bar = target_df[target_cols[0]].value_counts().sort_values()
 
@@ -52,9 +47,11 @@ loan_intent_bar = target_df[target_cols[0]].value_counts().sort_values()
 contingency_table = pd.crosstab(
     index=target_df[target_cols[0]], columns=target_df[target_cols[1]])
 
+# plotting ...
 
 # sns.countplot(data = target_df, x = target_cols[0], hue=target_cols[1])
 # plt.xticks(rotation=75, size=9)
+# export_fig("loan_intent_count.png")
 
 
 # performing chi-square test to check the statistical significance

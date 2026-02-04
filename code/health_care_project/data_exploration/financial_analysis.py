@@ -29,13 +29,13 @@ target_df = import_df(target_cols)
 
 
 # Dist of billing amount
-# _, ax = plt.subplots(1, 2, figsize=(13,9))
-# target_df[target_cols[0]].plot(kind="hist", ax=ax[0])
-# target_df[target_cols[0]].plot(kind="kde", ax=ax[1])
-# plt.tight_layout(rect=[0,0.95,0,0.95])
+_, ax = plt.subplots(1, 2, figsize=(13, 9))
+target_df[target_cols[0]].plot(kind="hist", ax=ax[0])
+target_df[target_cols[0]].plot(kind="kde", ax=ax[1])
+plt.tight_layout(rect=[0, 0.95, 0, 0.95])
 
-# plt.suptitle("Billing Amount Distribution")
-# export_fig("billing_amnt_dist.png")
+plt.suptitle("Billing Amount Distribution")
+export_fig("billing_amnt_dist.png")
 
 # testing for normal distribution
 # normalcy_test = shapiro(target_df[target_cols[0]])

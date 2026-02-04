@@ -19,7 +19,7 @@ data_file_path = base_dir / ".." / ".." / "data/credit_card_transactions.csv"
 
 
 df = pd.read_csv(data_file_path, parse_dates=[
-                 "trans_date_trans_time", "dob"], nrows=10000)
+                 "trans_date_trans_time", "dob"])
 
 # df = pd.read_csv(data_file_path, parse_dates=[
 #                  # "trans_date_trans_time", "dob"])
@@ -129,4 +129,4 @@ def export_fig(fig_name: str) -> None:
     """
 
     save_to_path = str(base_dir) + "/visuals/{}".format(fig_name)
-    plt.savefig(save_to_path)
+    plt.savefig(save_to_path, dpi=350, bbox_inches="tight")

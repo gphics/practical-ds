@@ -110,4 +110,4 @@ sns.set_palette("magma")
 def export_fig(figname):
     file_path = str(base_dir) + "/visuals/{}".format(figname)
 
-    plt.savefig(file_path)
+    plt.savefig(file_path, dpi=350, bbox_inches="tight")

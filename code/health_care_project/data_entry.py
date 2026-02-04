@@ -79,7 +79,4 @@ def export_fig(fig_name: str) -> None:
     """
 
     save_to_path = str(base_dir) + "/visuals/{}".format(fig_name)
-    plt.savefig(save_to_path)
-
-
-get_df_info()
+    plt.savefig(save_to_path, dpi=350, bbox_inches="tight")

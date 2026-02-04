@@ -29,22 +29,22 @@ target_cols = ["Infant mortality", "Fertility Rate", "Maternal mortality ratio",
 
 target_df = import_df(target_cols)
 
-# sns.heatmap(target_df.corr(), annot=True)
+sns.heatmap(target_df.corr(), annot=True)
 
-# plt.title("Relationship Between Healthcare Metrics & Life Expectancy")
+plt.title("Relationship Between Healthcare Metrics & Life Expectancy")
 
-# export_fig("healthcare_metrics_vs_life_exp.png")
+export_fig("healthcare_metrics_vs_life_exp.png")
 
 
 # showing the relationship scatterplots
-_, ax = plt.subplots(1, 2)
+# _, ax = plt.subplots(1, 2)
 
-sns.scatterplot(target_df, x=target_cols[-1], y=target_cols[0], ax=ax[0])
+# sns.scatterplot(target_df, x=target_cols[-1], y=target_cols[0], ax=ax[0])
 
-sns.scatterplot(target_df, x=target_cols[-1], y=target_cols[3], ax=ax[1])
+# sns.scatterplot(target_df, x=target_cols[-1], y=target_cols[3], ax=ax[1])
 
-plt.tight_layout(rect=(0.03, 0.03, 0.95, 0.95))
-plt.suptitle(
-    "Relationship between life expectancy and healthcare metrics".title(), size=10)
+# plt.tight_layout(rect=(0.03, 0.03, 0.95, 0.95))
+# plt.suptitle(
+#     "Relationship between life expectancy and healthcare metrics".title(), size=10)
 
-export_fig("healthcare_metrics_vs_life_exp_scatterplot.png")
+# export_fig("healthcare_metrics_vs_life_exp_scatterplot.png")

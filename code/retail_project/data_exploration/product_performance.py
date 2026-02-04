@@ -50,10 +50,51 @@ def get_rank(df, size="large"):
 freq_top_performance = get_rank(product_performance_by_freq)
 freq_bottom_performance = get_rank(product_performance_by_freq, "small")
 
+# plotting
+
+# freq_bottom_performance.plot(kind="bar")
+# plt.xticks(size=7)
+# plt.xlabel("Products")
+# plt.title("Bottom Product Performance by Frequency")
+# export_fig("bottom_product_performance_by_freq.png")
+
+# plotting
+
+freq_top_performance.plot(kind="bar")
+plt.xticks(size=7)
+plt.xlabel("Products")
+plt.title("Top Product Performance by Frequency")
+export_fig("top_product_performance_by_freq.png")
+
+
 # Quantity Ranking
 quantity_top_performance = get_rank(product_performance_by_quantity)
 quantity_bottom_performance = get_rank(
     product_performance_by_quantity, "small")
+
+# plotting
+
+# quantity_bottom_pe# plotting
+
+# quantity_bottom_performance.plot(kind="bar")
+# plt.xticks(size=7)
+# plt.xlabel("Products")
+# plt.title("Bottom Product Performance by Quantity")
+# export_fig("bottom_product_performance_by_quantity.png")
+
+# plotting
+
+# quantity_top_performance.plot(kind="bar")
+# plt.xticks(size=7)
+# plt.xlabel("Products")
+# plt.title("Top Product Performance by Quantity")
+# export_fig("top_product_performance_by_quantity.png")rformance.plot(kind="bar")
+# plt.xticks(size=7)
+# plt.xlabel("Products")
+# plt.title("Bottom Product Performance by Quantity")
+# export_fig("bottom_product_performance_by_quantity.png")
+
+# plotting
 
 # quantity_top_performance.plot(kind="bar")
 # plt.xticks(size=7)

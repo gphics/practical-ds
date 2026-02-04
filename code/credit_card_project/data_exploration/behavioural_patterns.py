@@ -35,6 +35,7 @@ target_df = import_df(target_cols)
 hourly_velocity = target_df.groupby(
     target_cols[2]).size().sort_values(ascending=False)
 
+# plotting ...
 # hourly_velocity.plot(kind="bar")
 # plt.ylabel("Count")
 # plt.xticks(size=8)
@@ -61,7 +62,7 @@ off_hour_spending_sum = off_hour_spending.sum()
 # ax[0].tick_params(axis="both", labelsize=8)
 
 # second plot: Count difference between off-hour and non-off-hour transactions
-# sns.countplot(target_df, x = target_cols[-1], ax=ax[1])
+# sns.countplot(target_df, x=target_cols[-1], ax=ax[1])
 
 # setting plot styles
 # ax[1].set_ylabel("Count", size=8)
@@ -106,29 +107,29 @@ cat_amnt_sum = category_group[target_cols[0]
 
 
 # plotting the barplot
-# _, ax = plt.subplots(1, 2)
-# cat_freq_size.plot(kind="bar", ax=ax[0])
+_, ax = plt.subplots(1, 2)
+cat_freq_size.plot(kind="bar", ax=ax[0])
 
-# cat_amnt_sum.plot(kind="bar", ax=ax[1])
-
-
-# # ax0 style
-# ax[0].set_xlabel("Categories", size=9)
-# ax[0].tick_params(axis="both", labelsize=8)
-# ax[0].set_ylabel("Count", size=9)
+cat_amnt_sum.plot(kind="bar", ax=ax[1])
 
 
-# # ax1 style
-# ax[1].set_xlabel("Categories", size=9)
-# ax[1].tick_params(axis="both", labelsize=8)
-# ax[1].set_ylabel("Amount($)", size=9)
-# ax[1].ticklabel_format(style="plain", axis="y")
+# ax0 style
+ax[0].set_xlabel("Categories", size=9)
+ax[0].tick_params(axis="both", labelsize=8)
+ax[0].set_ylabel("Count", size=9)
 
-# # general plot styles
-# plt.tight_layout(rect=[0.06, 0.05, 0.95, 0.95])
-# plt.suptitle("Category Barplot", size=10)
 
-# export_fig("category_freq_amnt_sum.png")
+# ax1 style
+ax[1].set_xlabel("Categories", size=9)
+ax[1].tick_params(axis="both", labelsize=8)
+ax[1].set_ylabel("Amount($)", size=9)
+ax[1].ticklabel_format(style="plain", axis="y")
+
+# general plot styles
+plt.tight_layout(rect=[0.06, 0.05, 0.95, 0.95])
+plt.suptitle("Category Barplot", size=10)
+
+export_fig("category_freq_amnt_sum.png")
 
 # Testing for assosciativity between categories and amount
 
