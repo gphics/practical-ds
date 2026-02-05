@@ -51,12 +51,16 @@ async function SingleProjectPage({ params }) {
 
   return (
     <div className="single-project-page">
-      {dataExist ? <MainRendererEngine data={data} /> : <section className="not-found-alert">
+      {dataExist ? <>
+        <Link className="go-home" href={"/"}>  Back Home</Link>
+        <MainRendererEngine data={data} />
+      </> : <section className="not-found-alert">
         <Image height={300} width={300} alt="file not found" src={"/other_visuals/file_not_found.jpeg"} />
         <Link href="/">Back Home</Link>
       </section>}
     </div>
   )
 }
+
 
 export default SingleProjectPage

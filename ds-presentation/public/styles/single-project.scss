@@ -30,6 +30,13 @@
             transform: scale(1.5);
         }
     }
+
+    .go-home {
+        margin: 5px auto;
+        color: black;
+        font-style: italic;
+        font-weight: 400;
+    }
 }
 
 .main-engine {
@@ -101,7 +108,7 @@
                     margin: 5px 0px;
 
                     @media (width <=760px) {
-                        
+
                         height: 400px;
                     }
                 }
