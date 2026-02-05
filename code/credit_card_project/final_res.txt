@@ -33,7 +33,7 @@ Question
 Category Spending: Which categories (e.g., health_fitness vs. online_retail) have the most frequent transactions versus the highest total monetary value?
 
 Answer
-The category with the most frequent transactions is gas transport while the one with the highest monetary value is grocery pos. Using Kruskal wallis test to figgure out if there is an assosciation between category and amount spent, a pvalue < 0.001 was gotten which signifies the prescence of significant assosciation between the two features
+The category with the most frequent transactions is gas transport while the one with the highest monetary value is grocery pos. Using Kruskal wallis test to figgure out if there is an assosciation between category and amount spent, a pvalue < 0.001 was gotten which signifies the prescence of significant assosciation between the two features.
 
 Geographical Anomalies -->
 

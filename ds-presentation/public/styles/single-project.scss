@@ -1,0 +1,111 @@
+.single-project-page {
+    display: flex;
+    flex-direction: column;
+
+    .not-found-alert {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            padding: 10px 15px;
+            margin: 10px auto;
+            border-radius: 5px;
+            position: relative;
+
+            &:hover {
+                background-color: rgb(51, 56, 56);
+            }
+
+        }
+
+        img {
+            transform: scale(1.5);
+        }
+    }
+}
+
+.main-engine {
+    padding: 5px 10px;
+    // background-color: red;
+}
+
+.big-header {
+    background-color: rgb(112, 56, 87);
+    width: max-content;
+    padding: 5px;
+    color: white;
+}
+
+.simple-renderer {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+
+    p {
+        font-size: .8em;
+        margin: 5px 0px;
+
+        a {
+            text-decoration: none;
+
+        }
+    }
+}
+
+.complex-renderer {
+    .intro-header {
+        margin: 5px 0px;
+    }
+
+    .topic-holder {
+        margin: 5px 0px;
+
+        h5 {
+            margin: 5px 0px;
+            font-style: italic;
+        }
+
+        .each-insight {
+            margin: 5px 0px;
+
+            p {
+                margin: 5px 0px;
+                padding: 5px;
+                font-size: .8em;
+
+                span {
+                    margin: 2px 0px;
+                    font-weight: bold;
+                }
+
+                &:first-child {
+                    background-color: rgb(112, 56, 87);
+                    color: white;
+                }
+            }
+
+            .graph-holder {
+                margin: 5px 0px;
+
+                img {
+                    width: 100%;
+                    max-width: 600px;
+                    margin: 5px 0px;
+
+                    @media (width <=760px) {
+                        
+                        height: 400px;
+                    }
+                }
+            }
+        }
+    }
+}

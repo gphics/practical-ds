@@ -13,7 +13,7 @@ Question
 Economic Correlation Analysis: Investigate the relationship between GDP and socio-economic factors like life expectancy, literacy rates, and unemployment.
 
 Answer
-There is a weak positive correlation between GDP, life expectancy and gross tertiary education enrollment. unemployment rate and gross primary education enrollment have no effect whatsover with GDP
+There is a weak positive correlation between GDP, life expectancy and gross tertiary education enrollment. unemployment rate and gross primary education enrollment have no effect whatsover with GDP.
 
 Environmental Impact Studies -->
 
@@ -26,7 +26,7 @@ Background knowledge:High CO2 emissions have devastating effects on health, both
 CO2 emissions have a strong positive correlation with urban population hence an increase in urban population lead to increase in co2 emissions and vice versa. CO2 emissions have negligible correlation with agricultural land percentage & forested area. The country with the highest CO2 emissions and urban population is China while the country with the lowest CO2 emissions and urban population are Tuvalu & Liechtenstein respectively.
 
 Question
-Impact of urban population on life expectancy
+What is the impact of urban population on life expectancy ?
 
 Answer
 High CO2 emissions has been found to have a strong positive correlation with urban population and since it has a devastating effect on health, life expectancy is supposed to be low in region with high co2 emissions. The correlation between life expectancy and urban population through analysis was found to be totally negligible (0.07) while co2 emissions have a low correlation with life expectancy. Hence co2 emissions and urban population have negligible to low effect on life expectancy. The country with the top life expectancy is San Marino while the country with the lowest life expectancy is Central African Republic. China who have the highest co2 emissions and urban population have a life expectancy of 77.
@@ -36,7 +36,7 @@ Question
 Further investigate the top and bottom predictors for life expectancy
 
 Answer
-The best predictor for life expectancy is Gross tertiary education enrollment and the worst predictor is Population (labor force participation)
+The best predictor for life expectancy is Gross tertiary education enrollment and the worst predictor is Population (labor force participation).
 
 Healthcare & Well-being -->
 

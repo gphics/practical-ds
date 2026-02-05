@@ -1,5 +1,5 @@
 // Full title of data analysis project
-export const CreditCardProject = "Credit Card Dataset Ananlysis";
+export const CreditCardProject = "Credit Card Dataset Analysis";
 export const HealthCareProject = " Health Care Dataset Analysis";
 export const LoanProject = "Loan Dataset Analysis";
 export const RetailProject = "Retail Dataset Analysis";

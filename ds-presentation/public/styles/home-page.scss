@@ -1,0 +1,50 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        text-align: center;
+        margin: 5px 0px;
+        font-size: 1.5em;
+    }
+
+    .project-list {
+        background-color: rgba(78, 78, 78, 0.137);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px 0px;
+        margin-top: 10px;
+
+        .each-project-link {
+            text-decoration: none;
+            margin: 10px 0px;
+            border: 2px solid rgba(0, 0, 0, 0.082);
+            padding: 10px;
+            color: black;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            @media (width <=760px) {
+                img {
+                    width: 250px;
+                    height: 250px;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.01);
+                border: 2px solid rgba(117, 21, 21, 0.582);
+            }
+
+            img {
+                border-radius: 5px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

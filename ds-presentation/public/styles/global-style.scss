@@ -1,8 +1,12 @@
 @use "./miscellaneous/loading";
+@use "home-page";
+@use "./single-project";
 
 *{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    transition: all .3s;
+    font-family: sans-serif;
 }
 

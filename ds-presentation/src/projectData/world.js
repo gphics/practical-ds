@@ -9,7 +9,75 @@ This comprehensive dataset provides a wealth of information about all countries 
   insightSummary: `Analysis of the Global Country Information Dataset 2023 reveals that human well-being is driven more by specialized education and healthcare quality than by raw economic output or urbanization. While GDP and urban population correlate with higher CO2 emissions and tertiary education, they have surprisingly negligible effects on life expectancy. Instead, longevity is most accurately predicted by gross tertiary enrollment and is hindered by high infant and maternal mortality rates.
 Environmentally, the link between urbanization and emissions is stark—as seen in World Bank Data for China—yet these factors do not directly dictate national health outcomes. In the labor sector, metrics like minimum wage and urban density show little interdependence, with the only notable relationship being a moderate negative correlation between unemployment and labor force participation. Ultimately, the data suggests that advancing physician density and higher education are the most effective levers for improving global living standards.
  `,
-  insights: [],
+  insights: [
+    {
+      topic: "Economic Correlation Analysis",
+      informations: [
+        {
+          question:
+            "Investigate the relationship between GDP and socio-economic factors like life expectancy, literacy rates, and unemployment. ",
+          answer:
+            "There is a weak positive correlation between GDP, life expectancy and gross tertiary education enrollment. unemployment rate and gross primary education enrollment have no effect whatsover with GDP.",
+          imgs: ["/world_visuals/gdp_corr_socio_eco_factors.png"],
+        },
+      ],
+    },
+
+    {
+      topic: "Environmental Impact Studies",
+      informations: [
+        {
+          question:
+            "Examine the link between a country's agricultural land percentage, forested area, and its CO2 emissions to understand environmental footprints.",
+          answer: `Background knowledge:High CO2 emissions have devastating effects on health, both through direct physiological impacts and indirect environmental changes. Research indicates that unchecked emissions could lead to tens of thousands of additional deaths annually. CO2 emissions have a strong positive correlation with urban population hence an increase in urban population lead to increase in co2 emissions and vice versa. CO2 emissions have negligible correlation with agricultural land percentage & forested area. The country with the highest CO2 emissions and urban population is China while the country with the lowest CO2 emissions and urban population are Tuvalu & Liechtenstein respectively.`,
+          imgs: ["/world_visuals/environmental_impacts_heatmap.png"],
+        },
+        {
+          question:
+            "What is the impact of urban population on life expectancy ?",
+          answer:
+            "High CO2 emissions has been found to have a strong positive correlation with urban population and since it has a devastating effect on health, life expectancy is supposed to be low in region with high co2 emissions. The correlation between life expectancy and urban population through analysis was found to be totally negligible (0.07) while co2 emissions have a low correlation with life expectancy. Hence co2 emissions and urban population have negligible to low effect on life expectancy. The country with the top life expectancy is San Marino while the country with the lowest life expectancy is Central African Republic. China who have the highest co2 emissions and urban population have a life expectancy of 77.",
+          imgs: ["/world_visuals/environmental_impacts_heatmap_2.png"],
+        },
+        {
+          question:
+            "Further investigate the top and bottom predictors for life expectancy",
+          answer:
+            "The best predictor for life expectancy is Gross tertiary education enrollment and the worst predictor is Population (labor force participation).",
+          imgs: [
+            "/world_visuals/top_&_bottom_predictors_for_life_expectancy.png",
+          ],
+        },
+      ],
+    },
+    {
+      topic: "Healthcare & Well-being",
+      informations: [
+        {
+          question:
+            "Analyze the impact of healthcare metrics (Infant mortality, Fertility Rate, Maternal mortality ratio, Physicians per thousand, Out of pocket health expenditure) on overall life expectancy across different regions.",
+          answer:
+            "Life expectancy have a strong negative correlation with infant mortality, fertility rate and maternal mortality ratio, meaning if the value of healthcare metrics increases then the life expectancy decreases and vice versa. Life expectancy also have a moderate negative correlation with out of pocket health expenditure, meaning if life expectancy increases then out of pocket health expenditure reduces. Lastly life expectancy have a strong positive correlation with physicians per thousand hence, an increase in life expectancy causes a coresponding increase in physicians per thousand and vice versa.",
+          imgs: [
+            "/world_visuals/healthcare_metrics_vs_life_exp.png",
+            "/world_visuals/healthcare_metrics_vs_life_exp_scatterplot.png",
+          ],
+        },
+      ],
+    },
+    {
+      topic: "Labor & Urbanization Trends",
+      informations: [
+        {
+          question:
+            "Study the dynamics between urban population percentage, labor force participation,Unemployment rate, and minimum wage levels",
+          answer:
+            "Urban population percentage, labor force participation,unemployment rate, and minimum wage levels have negligible correlation between each other except unemployment rate and labor force participation which have a moderate negative correlation hence as unemployment rate increases labor force participation decreases.",
+          imgs: ["/world_visuals/labor_&_urbanization_trends.png"],
+        },
+      ],
+    },
+  ],
 };
 
 export default retailData;
