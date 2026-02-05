@@ -38,7 +38,7 @@ Seasonally, November stands out as the highest volume month with over 162,000 tr
             "What are the busiest days of the week and hours of the day for sales?",
           answer:
             "The busiest days of the week and hours of the day for sales is Sunday at 12:00.",
-          imgs: ["/retail_visuals/busiest.png"],
+          imgs: ["/retail_visuals/busiest_hours.png"],
         },
       ],
     },

@@ -64,7 +64,7 @@ Finally, the analysis confirms that external costs and collateral status remain 
             "The following are the reasons people request for loan : HOMEIMPROVEMENT, DEBTCONSOLIDATION, PERSONAL, VENTURE, MEDICAL, EDUCATION. Using Chi-square test a statistically significant assosciation (pvalue:2.173084187054017e-194) was observed between loan purpose and loan status. Residuals was calculated from the result from the chi-square and  the category the highest risk is DEBTCONSOLIDATION with a value of 14.43 followed by the medical category with a value of 10.97. The safest category are PERSONAL, VENTURE, and EDUCATION which show a statistically significant deficit.",
           imgs: [
             "/loan_visuals/loan_intent_bar_plot.png",
-            "/loan_visuals/loan_count.png",
+            "/loan_visuals/loan_intent_count.png",
             "/loan_visuals/loan_intent_residuals.png",
           ],
         },
