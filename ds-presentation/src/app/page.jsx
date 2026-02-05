@@ -16,7 +16,9 @@ function HomePage() {
   return (
     <div className='home-page'>
       <h2>Projects</h2>
-      <Link className='my-link' href={"www.linkedin.com/in/abdulbasit-abdulhakeem-013a42213"}>by Abdulbasit</Link>
+      <Link
+        target="_blank"
+        className='my-link' href={"https://www.linkedin.com/in/abdulbasit-abdulhakeem-013a42213"}>by Abdulbasit</Link>
       <section className="project-list">
         
         {dataArr.map(({ title, img }) => {
